@@ -43,7 +43,7 @@ body {
 .testimonial > p:first-of-type {
     font-weight: 600;
     font-size: var(--fs-500);
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .testimonial > p:last-of-type {
     font-weight: 500;
@@ -149,9 +149,8 @@ body {
         "d"
         "e";
 }
-.testimonial {
-}
-@media (min-width: 600px) {
+/*600px*/
+@media (min-width: 37.5rem) {
     .testimonials {
         grid-template-areas:
             " a a"
@@ -162,8 +161,12 @@ body {
     .testimonial {
         margin: calc(1.875rem / 2);
     }
+    .testimonial > p:first-of-type {
+        margin-bottom: 1.25rem;
+    }
 }
-@media (min-width: 800px) {
+/*800px*/
+@media (min-width: 50rem) {
     .testimonials {
         display: grid;
 
@@ -173,8 +176,8 @@ body {
             " c c .";
     }
 }
-
-@media (min-width: 1120px) {
+/*1120px*/
+@media (min-width: 70rem) {
     .testimonials {
         display: grid;
 
